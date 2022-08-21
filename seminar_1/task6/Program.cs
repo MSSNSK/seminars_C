@@ -7,7 +7,7 @@
 
 Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine());
-if (num % 2 == -num % 2)
+    if (num % 2 == 0)
 {
     Console.WriteLine($"{num} - чётное число!");
 }
