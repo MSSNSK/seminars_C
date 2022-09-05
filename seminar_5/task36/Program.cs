@@ -21,7 +21,6 @@ int SumElOddIndex(int[] array)
     for (int i = 1; i < array.Length; i++)
     {
         sum += array[i];
-        i++;
     }
     return sum;
 }
