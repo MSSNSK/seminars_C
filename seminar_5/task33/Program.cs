@@ -24,13 +24,13 @@ bool IsExist(int number, int[] arr)
     return false;
 }
 
-Console.WriteLine("Число: ");
+Console.WriteLine("Number: ");
 int number = int.Parse(Console.ReadLine());
 
 int[] myArray = GetArray(30, -10, 10);
 Console.WriteLine(String.Join(", ", myArray));
 
 if (IsExist(number, myArray))
-    Console.WriteLine("Число найдено");
+    Console.WriteLine("The number was found");
 else
-    Console.WriteLine("Число не найдено");
+    Console.WriteLine("The number was not found");

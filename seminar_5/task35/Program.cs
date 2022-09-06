@@ -31,44 +31,44 @@ int[] myArray = GetArray(123, -100, 100);
 Console.WriteLine(String.Join(", ", myArray));
 
 int result = ElementsCount(myArray);
-Console.WriteLine($"Количество чисел из диапазона: {result}");
+Console.WriteLine($"Number of numbers from the range: {result}");
 
 // Второй вариант (другой группы)
 
-int[] GetArray(int size, int minValue, int maxValue)
-{
-    int[] res = new int[size];
+// int[] GetArray(int size, int minValue, int maxValue)
+// {
+//     int[] res = new int[size];
 
-    for (int i = 0; i < size; i++)
-    {
-        res[i] = new Random().Next(minValue, maxValue + 1);
-    }
-    return res;
-}
+//     for (int i = 0; i < size; i++)
+//     {
+//         res[i] = new Random().Next(minValue, maxValue + 1);
+//     }
+//     return res;
+// }
 
-bool FindNumber(int[] array, int num)
-{
-    foreach (int el in array)
-    {
-        if (el == num)
-        return true;
-    }
-    return false;
-}
+// bool FindNumber(int[] array, int num)
+// {
+//     foreach (int el in array)
+//     {
+//         if (el == num)
+//         return true;
+//     }
+//     return false;
+// }
 
-Console.Write("Введите длинну массива: ");
-int arraySize = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите начало диапазона: ");
-int arrayStart = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите конец диапазона: ");
-int arrayEnd = Convert.ToInt32(Console.ReadLine());
-int[] newArray = GetArray(arraySize, arrayStart, arrayEnd);
+// Console.Write("Enter the length of the array: ");
+// int arraySize = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Enter the beginning of the range: ");
+// int arrayStart = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Enter the end of the range: ");
+// int arrayEnd = Convert.ToInt32(Console.ReadLine());
+// int[] newArray = GetArray(arraySize, arrayStart, arrayEnd);
 
-Console.Write("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Массив: {String.Join(", ", newArray)}");
+// Console.Write("Enter the number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Array: {String.Join(", ", newArray)}");
 
-if (FindNumber(newArray, number))
-Console.WriteLine("Да");
-else
-Console.WriteLine("Нет");
+// if (FindNumber(newArray, number))
+// Console.WriteLine("Yes");
+// else
+// Console.WriteLine("Not");

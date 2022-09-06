@@ -29,13 +29,13 @@ int[] ProductionArray(int[] array)
     return result;
 }
 
-Console.Write("Введите длинну массива: ");
+Console.Write("Enter the length of the array: ");
 int arraySize = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите начало диапазона: ");
+Console.Write("Enter the beginning of the range: ");
 int arrayStart = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите конец диапазона: ");
+Console.Write("Enter the end of the range: ");
 int arrayEnd = Convert.ToInt32(Console.ReadLine());
 int[] newArray = GetArray(arraySize, arrayStart, arrayEnd);
 int[] changeArray = ProductionArray(newArray);
-Console.WriteLine($"Массив: {String.Join(" ", newArray)}");
-Console.WriteLine($"Результат: {String.Join(" ", changeArray)}");
+Console.WriteLine($"Array: {String.Join(" ", newArray)}");
+Console.WriteLine($"Result: {String.Join(" ", changeArray)}");
