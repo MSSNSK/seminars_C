@@ -31,3 +31,20 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(ReverseBinary(Binary(number)));
 
+
+// ВТОРОЙ ВАРИАНТ (оптимизированный)
+
+string BinaryN(int n)
+{
+    string result = String.Empty;
+    while (n > 0)
+    {
+        result = $"{n % 2}" + result;
+        n /= 2;
+    }
+    return result;
+}
+
+Console.Write("Введите число N:");
+int numberN = int.Parse(Console.ReadLine());
+Console.WriteLine($"Двоичный код числа {numberN}: " + BinaryN(numberN));
