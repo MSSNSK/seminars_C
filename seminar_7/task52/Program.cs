@@ -33,7 +33,7 @@ void PrintArray(int[,] array)
     }
 }
 
-void AverageArithmeticRowsArray(int[,] array)
+void AverageArithmeticColumnsArray(int[,] array)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
@@ -54,4 +54,4 @@ int columns = Convert.ToInt32(Console.ReadLine());
 int[,] myArray = GetArray(rows, columns);
 PrintArray(myArray);
 
-AverageArithmeticRowsArray(myArray);
+AverageArithmeticColumnsArray(myArray);
